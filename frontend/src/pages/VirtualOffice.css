@@ -1,0 +1,1058 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.office-page {
+  min-height: 100vh;
+  padding: 30px 5%;
+  background: #f6f7fc;
+  color: #252442;
+  font-family: 'Inter', sans-serif;
+}
+
+/* HEADER */
+
+.office-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.office-brand {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.office-brand-icon {
+  width: 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #987cff, #6048d4);
+  color: white;
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.office-header h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.office-header p {
+  color: #9695aa;
+  margin: 6px 0 0;
+  font-size: 11px;
+}
+
+.office-back {
+  text-decoration: none;
+  color: #6852c4;
+  background: white;
+  border: 1px solid #ece9f7;
+  padding: 12px 17px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.office-back:hover {
+  background: #eeeaff;
+}
+
+/* WELCOME */
+
+.office-welcome {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(115deg, #49378f, #795fe0);
+  border-radius: 20px;
+  padding: 30px 35px;
+  color: white;
+  margin-bottom: 22px;
+  overflow: hidden;
+}
+
+.office-tag {
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: #d8ceff;
+  font-weight: 700;
+}
+
+.office-welcome h2 {
+  font-size: 26px;
+  margin: 12px 0 8px;
+}
+
+.office-welcome p {
+  color: #e5deff;
+  font-size: 12px;
+}
+
+.office-welcome-icon {
+  font-size: 65px;
+  padding: 10px 25px;
+}
+
+/* INFO CARDS */
+
+.office-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 17px;
+  margin-bottom: 25px;
+}
+
+.office-info-card {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 18px;
+  background: white;
+  border-radius: 14px;
+  border: 1px solid #f0eff7;
+  box-shadow: 0 4px 15px rgba(30, 25, 70, 0.03);
+}
+
+.office-info-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: #f0edff;
+  font-size: 20px;
+}
+
+.office-info-card strong {
+  display: block;
+  font-size: 12px;
+}
+
+.office-info-card small {
+  display: block;
+  margin-top: 5px;
+  color: #9998ac;
+  font-size: 10px;
+}
+
+/* OFFICE ROOM */
+
+.office-room {
+  min-height: 570px;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  border-radius: 22px;
+  border: 7px solid #e5e0f4;
+  background-color: #f4f0ff;
+  background-image:
+    linear-gradient(rgba(122, 100, 180, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(122, 100, 180, 0.08) 1px, transparent 1px);
+  background-size: 35px 35px;
+  box-shadow: inset 0 0 35px rgba(91, 67, 160, 0.06);
+}
+
+.room-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.room-topbar strong {
+  font-size: 10px;
+  letter-spacing: 1.4px;
+  color: #63519c;
+}
+
+.room-live-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #20bd76;
+  border-radius: 50%;
+  margin-right: 8px;
+  box-shadow: 0 0 0 4px #d5f5e4;
+}
+
+.room-time {
+  font-size: 10px;
+  color: #9186b5;
+}
+
+/* MEETING ROOM */
+
+.meeting-area {
+  position: absolute;
+  width: 220px;
+  height: 165px;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid #b9a9ed;
+  border-radius: 19px;
+  background: linear-gradient(145deg, #e6ddff, #f8f5ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 8px 20px rgba(95, 70, 165, 0.09);
+  z-index: 2;
+}
+
+.meeting-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+  background: #d3c5ff;
+  font-size: 22px;
+}
+
+.meeting-area h3 {
+  font-size: 14px;
+  margin: 10px 0 5px;
+}
+
+.meeting-area p {
+  color: #8c82ad;
+  font-size: 10px;
+  margin: 0 0 10px;
+}
+
+.meeting-status {
+  background: #e0f8eb;
+  color: #16844d;
+  font-size: 8px;
+  font-weight: 800;
+  padding: 5px 9px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+}
+
+/* MEMBER DESKS */
+
+.office-desks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.office-member {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 140px;
+  transform: translate(-50%, -50%);
+  cursor: grab;
+  pointer-events: auto;
+  user-select: none;
+}
+
+.office-member:active {
+  cursor: grabbing;
+}
+
+.office-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 140px;
+}
+
+.desk-surface {
+  position: relative;
+  width: 105px;
+  height: 82px;
+  background: linear-gradient(145deg, #b9a6ed, #9178d3);
+  border: 3px solid #8068c4;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 9px 0 #7963b4, 0 14px 18px rgba(60, 45, 100, 0.12);
+}
+
+.office-avatar {
+  position: relative;
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  border: 3px solid white;
+  color: white;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  font-size: 16px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+  z-index: 2;
+}
+
+.avatar-online {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #20ca79;
+  border: 2px solid white;
+  border-radius: 50%;
+  right: -2px;
+  bottom: 0;
+}
+
+.desk-monitor {
+  position: absolute;
+  right: 9px;
+  top: 9px;
+  color: white;
+  font-size: 19px;
+  opacity: 0.8;
+}
+
+.desk-keyboard {
+  position: absolute;
+  width: 31px;
+  height: 5px;
+  background: #f0eaff;
+  border-radius: 5px;
+  bottom: 8px;
+  left: 36px;
+}
+
+.member-name-tag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-top: 19px;
+  padding: 11px 12px;
+  min-width: 120px;
+  border-radius: 11px;
+  background: white;
+  box-shadow: 0 5px 15px rgba(50, 40, 100, 0.07);
+}
+
+.member-name-tag strong {
+  font-size: 11px;
+}
+
+.member-name-tag small {
+  color: #9391a6;
+  font-size: 9px;
+}
+
+.member-name-tag span {
+  color: #18a663;
+  font-size: 8px;
+  font-weight: 700;
+}
+
+/* DECORATIONS */
+
+.office-decoration {
+  position: absolute;
+  font-size: 29px;
+  z-index: 1;
+}
+
+.plant-one {
+  top: 75px;
+  left: 35px;
+}
+
+.plant-two {
+  top: 80px;
+  right: 35px;
+}
+
+.coffee {
+  bottom: 40px;
+  left: 35px;
+}
+
+.bookshelf {
+  bottom: 40px;
+  right: 40px;
+}
+
+.lamp {
+  top: 250px;
+  right: 50%;
+  transform: translateX(50%);
+  font-size: 23px;
+  opacity: 0.6;
+}
+
+.room-floor-label {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #9d91bd;
+  font-size: 8px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* BOTTOM SECTION */
+
+.office-bottom {
+  margin-top: 23px;
+  padding: 20px 23px;
+  background: white;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.office-bottom h3 {
+  font-size: 14px;
+  margin: 0 0 6px;
+}
+
+.office-bottom p {
+  color: #9695aa;
+  font-size: 10px;
+  margin: 0;
+}
+
+.office-bottom a {
+  text-decoration: none;
+  color: #7058d0;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.office-footer {
+  text-align: center;
+  color: #a4a2b4;
+  font-size: 10px;
+  margin-top: 28px;
+  padding-bottom: 10px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+  .office-desks {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 45px;
+    top: 270px;
+  }
+
+  .office-room {
+    min-height: 760px;
+  }
+
+  .meeting-area {
+    top: 75px;
+  }
+
+  .lamp {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .office-page {
+    padding: 20px 14px;
+  }
+
+  .office-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .office-welcome {
+    padding: 24px 20px;
+  }
+
+  .office-welcome h2 {
+    font-size: 21px;
+  }
+
+  .office-welcome-icon {
+    font-size: 43px;
+    padding: 5px;
+  }
+
+  .office-info {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .office-room {
+    min-height: 930px;
+    padding: 15px;
+  }
+
+  .office-desks {
+    top: 285px;
+    row-gap: 55px;
+    padding: 0 5px;
+  }
+
+  .office-member {
+    width: 130px;
+  }
+
+  .meeting-area {
+    width: 180px;
+    height: 150px;
+  }
+
+  .plant-one {
+    left: 10px;
+  }
+
+  .plant-two {
+    right: 10px;
+  }
+
+  .coffee {
+    left: 12px;
+    bottom: 25px;
+  }
+
+  .bookshelf {
+    right: 12px;
+    bottom: 25px;
+  }
+
+  .room-time {
+    display: none;
+  }
+
+  .office-bottom {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 360px) {
+  .office-desks {
+    column-gap: 0;
+  }
+
+  .office-member {
+    width: 115px;
+  }
+
+  .desk-surface {
+    transform: scale(0.9);
+  }
+}
+/* PROXIMITY CIRCLES */
+
+.proximity-ring {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 8px);
+  border-radius: 50%;
+  border: 3px solid;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.proximity-ring.clear {
+  border-color: #16a34a;
+  box-shadow: 0 0 10px rgba(22, 163, 74, 0.35);
+}
+
+.proximity-ring.blocked {
+  border-color: #f97316;
+  box-shadow: 0 0 10px rgba(249, 115, 22, 0.35);
+}
+
+.earshot-range {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: rgba(65, 105, 225, 0.08);
+  border: 2px dashed rgba(65, 105, 225, 0.55);
+  pointer-events: none;
+  z-index: 1;
+}
+/* CARTOON HUMAN AVATARS */
+
+.office-avatar {
+  position: relative;
+  width: 48px;
+  height: 65px;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  z-index: 3;
+}
+
+.human-hair {
+  position: absolute;
+  width: 31px;
+  height: 20px;
+  background: #30251f;
+  border-radius: 15px 15px 5px 5px;
+  top: 0;
+  left: 9px;
+  z-index: 3;
+}
+
+.human-face {
+  position: absolute;
+  width: 27px;
+  height: 31px;
+  background: #f5c49b;
+  border-radius: 45% 45% 48% 48%;
+  top: 9px;
+  left: 11px;
+  z-index: 2;
+}
+
+.human-eye {
+  position: absolute;
+  width: 3px;
+  height: 4px;
+  background: #252020;
+  border-radius: 50%;
+  top: 12px;
+}
+
+.left-eye {
+  left: 6px;
+}
+
+.right-eye {
+  right: 6px;
+}
+
+.human-smile {
+  position: absolute;
+  width: 8px;
+  height: 4px;
+  border-bottom: 1.5px solid #9b5147;
+  border-radius: 50%;
+  left: 10px;
+  bottom: 6px;
+}
+
+.human-body {
+  position: absolute;
+  width: 39px;
+  height: 25px;
+  border-radius: 13px 13px 5px 5px;
+  bottom: 0;
+  left: 5px;
+  border: 2px solid white;
+  z-index: 1;
+}
+
+.office-avatar .avatar-online {
+  right: -2px;
+  bottom: 2px;
+  z-index: 4;
+}
+/* DIFFERENT HAIR STYLES */
+
+.human-hair.hair-short {
+  background: #30251f;
+  border-radius: 15px 15px 5px 5px;
+}
+
+.human-hair.hair-curly {
+  background: #5b3425;
+  border-radius: 50%;
+  height: 23px;
+  box-shadow:
+    -5px 5px 0 #5b3425,
+    5px 5px 0 #5b3425;
+}
+
+.human-hair.hair-long {
+  background: #3b241c;
+  height: 28px;
+  border-radius: 15px 15px 8px 8px;
+}
+
+.human-hair.hair-spiky {
+  background: #252020;
+  height: 18px;
+  clip-path: polygon(
+    0 100%, 10% 20%, 25% 60%,
+    40% 0, 55% 60%, 75% 10%,
+    90% 60%, 100% 100%
+  );
+}
+/* DIFFERENT CLOTHING STYLES */
+
+.human-body {
+  border: 2px solid white;
+}
+
+.human-body.outfit-formal {
+  border-radius: 10px 10px 5px 5px;
+  clip-path: polygon(20% 0, 80% 0, 100% 100%, 0 100%);
+}
+
+.human-body.outfit-casual {
+  border-radius: 14px 14px 5px 5px;
+}
+
+.human-body.outfit-hoodie {
+  border-radius: 16px 16px 5px 5px;
+  border-top: 4px solid #333;
+}
+
+.human-body.outfit-smart {
+  border-radius: 8px 8px 5px 5px;
+  border-top: 5px solid white;
+}
+/* SOUND BLOCKING WALLS */
+.office-wall {
+  position: absolute;
+  background: #475569;
+  border: 2px solid #334155;
+  border-radius: 4px;
+  z-index: 2;
+  pointer-events: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* ===== PROXISPEAK UNIQUE OFFICE THEME ===== */
+
+.office-page {
+  background:
+    radial-gradient(ellipse at top left, #e4ddff 0%, transparent 38%),
+    linear-gradient(135deg, #f5f3ff, #eef2ff 55%, #f8fafc);
+  color: #242044;
+}
+
+.office-brand-icon {
+  box-shadow: 0 7px 18px rgba(96, 72, 212, 0.3);
+}
+
+.office-welcome {
+  background:
+    radial-gradient(circle at 85% 20%, rgba(255,255,255,0.2), transparent 25%),
+    linear-gradient(120deg, #31246d, #6650c8 55%, #9279ed);
+  box-shadow: 0 15px 35px rgba(73, 55, 143, 0.2);
+  position: relative;
+}
+
+.office-welcome-icon {
+  filter: drop-shadow(0 12px 12px rgba(0,0,0,0.2));
+}
+
+.office-info-card {
+  border: 1px solid rgba(255,255,255,0.9);
+  box-shadow: 0 8px 25px rgba(65, 50, 130, 0.07);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.office-info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 13px 28px rgba(65, 50, 130, 0.13);
+}
+
+/* Modern virtual room floor */
+
+.office-room {
+  min-height: 620px;
+  border: 8px solid #d8d0f2;
+  border-radius: 25px;
+  background-color: #e9e5f7;
+  background-image:
+    linear-gradient(rgba(111, 91, 170, 0.10) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(111, 91, 170, 0.10) 1px, transparent 1px),
+    radial-gradient(ellipse at center, #faf9ff 0%, #e9e5f7 85%);
+  background-size: 35px 35px, 35px 35px, 100% 100%;
+  box-shadow:
+    inset 0 0 45px rgba(85, 65, 145, 0.10),
+    0 18px 40px rgba(60, 45, 110, 0.12);
+}
+
+.room-topbar {
+  padding: 20px 24px;
+}
+
+.meeting-area {
+  background: linear-gradient(145deg, #ffffff, #e9e1ff);
+  border: 2px solid #c9bafa;
+  box-shadow: 0 12px 25px rgba(83, 61, 150, 0.16);
+  transition: transform 0.25s;
+}
+
+.meeting-area:hover {
+  transform: translateX(-50%) translateY(-4px);
+}
+
+.desk-surface {
+  background: linear-gradient(145deg, #bca9f5, #7960c5);
+  border-color: #7057ba;
+  box-shadow:
+    0 9px 0 #604a9f,
+    0 16px 22px rgba(60, 45, 100, 0.2);
+}
+
+.member-name-tag {
+  border: 1px solid #eeeafd;
+  box-shadow: 0 8px 20px rgba(50, 40, 100, 0.12);
+}
+
+.office-wall {
+  background: linear-gradient(90deg, #64748b, #334155);
+  border: 2px solid #293548;
+  box-shadow:
+    0 5px 0 #263449,
+    0 8px 12px rgba(0,0,0,0.2);
+}
+
+.office-bottom {
+  border: 1px solid #eeeafd;
+  box-shadow: 0 8px 25px rgba(65, 50, 130, 0.07);
+}
+/* AVATAR & DESK UPGRADE */
+
+.office-member {
+  transition: filter 0.2s;
+}
+
+.office-member:hover {
+  filter: drop-shadow(0 8px 10px rgba(75, 55, 145, 0.2));
+}
+
+.desk-surface {
+  border-radius: 16px;
+  background: linear-gradient(145deg, #c8b8ff, #8068ce);
+  box-shadow:
+    0 9px 0 #624ba8,
+    0 16px 22px rgba(60, 45, 100, 0.2);
+}
+
+.office-avatar {
+  filter: drop-shadow(0 4px 4px rgba(0,0,0,0.15));
+}
+
+.member-name-tag {
+  border-radius: 14px;
+  padding: 12px 16px;
+  border: 1px solid #e8e1ff;
+  transition: transform 0.2s;
+}
+
+.office-member:hover .member-name-tag {
+  transform: translateY(-3px);
+}
+
+.avatar-online {
+  box-shadow: 0 0 0 3px rgba(32, 202, 121, 0.15);
+}
+/* FIX HEADER TEXT VISIBILITY */
+
+.office-header h1 {
+  color: #30216f !important;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+}
+
+.office-header p {
+  color: #716b8c !important;
+  font-weight: 500;
+}
+/* PREMIUM MEETING ROOM */
+
+.meeting-area {
+  border-radius: 22px;
+  background: linear-gradient(145deg, #ffffff, #e8e0ff);
+  border: 2px solid #c4b3fa;
+  box-shadow:
+    0 12px 25px rgba(83, 61, 150, 0.16),
+    inset 0 2px 8px rgba(255,255,255,0.9);
+}
+
+.meeting-icon {
+  background: linear-gradient(135deg, #dcd1ff, #b9a5fa);
+  box-shadow: 0 5px 12px rgba(100, 75, 190, 0.15);
+}
+
+.meeting-status {
+  box-shadow: 0 3px 8px rgba(22, 132, 77, 0.12);
+}
+
+/* OFFICE DECORATIONS */
+
+.office-decoration {
+  filter: drop-shadow(0 5px 5px rgba(50, 40, 80, 0.18));
+  transition: transform 0.25s;
+}
+
+.office-decoration:hover {
+  transform: translateY(-5px) scale(1.08);
+}
+
+.room-floor-label {
+  color: #7665a8;
+  letter-spacing: 2.5px;
+  font-weight: 800;
+}
+/* RESPONSIVE OFFICE INFO CARDS */
+
+@media (max-width: 850px) {
+  .office-info {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .office-info-card {
+    min-width: 0;
+  }
+
+  .office-page {
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 600px) {
+  .office-info {
+    grid-template-columns: 1fr;
+  }
+}
+/* AVATAR HOVER ANIMATION */
+
+.office-member {
+  transition: filter 0.25s ease;
+}
+
+.office-member:hover {
+  filter: drop-shadow(0 8px 12px rgba(80, 55, 160, 0.25));
+}
+
+.office-member:hover .office-avatar {
+  animation: avatarBounce 0.45s ease;
+}
+
+@keyframes avatarBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+}
+/* GLOWING PROXIMITY RINGS */
+
+.proximity-ring {
+  width: 72px;
+  height: 72px;
+  border-width: 3px;
+  animation: proximityPulse 2s ease-in-out infinite;
+}
+
+.proximity-ring.clear {
+  border-color: #16a34a;
+  box-shadow:
+    0 0 8px rgba(22, 163, 74, 0.5),
+    0 0 20px rgba(22, 163, 74, 0.25);
+}
+
+.proximity-ring.blocked {
+  border-color: #f97316;
+  box-shadow:
+    0 0 8px rgba(249, 115, 22, 0.5),
+    0 0 20px rgba(249, 115, 22, 0.25);
+}
+
+@keyframes proximityPulse {
+  0%, 100% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .proximity-ring {
+    animation: none;
+  }
+}
+/* PROXIMITY RING POSITION FIX */
+
+.office-member {
+  isolation: isolate;
+}
+
+.proximity-ring {
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.proximity-ring.blocked {
+  border: 4px solid #ff5500 !important;
+  box-shadow: 0 0 15px #ff5500, 0 0 25px rgba(255, 85, 0, 0.5);
+}
+/* FINAL ORANGE PROXIMITY RING FIX */
+
+.office-member {
+  position: absolute;
+  isolation: isolate;
+}
+
+.proximity-ring {
+  position: absolute !important;
+  top: -8px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 90px !important;
+  height: 90px !important;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 20 !important;
+}
+
+.proximity-ring.blocked {
+  border: 5px solid #ff4500 !important;
+  background: rgba(255, 69, 0, 0.12) !important;
+  box-shadow:
+    0 0 12px #ff4500,
+    0 0 25px rgba(255, 69, 0, 0.7) !important;
+}
+
+.proximity-ring.clear {
+  border: 4px solid #16a34a !important;
+  background: rgba(22, 163, 74, 0.08);
+}
